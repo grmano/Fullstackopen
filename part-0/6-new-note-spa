@@ -1,0 +1,14 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+browser-->server: content
+{"content":"keep being awesome","date":"2019-08-25T17:47:23.552Z"}
+server-->browser: 201 Created
+
+note over browser:
+browser adds "keep being awesome" to notes array
+then send a POST request to /new_note_spa
+with content-type json with the note that was submitted
+end note
+
+note over server:
+Server awcknoledges the request and send a Created response to browser
+end note
